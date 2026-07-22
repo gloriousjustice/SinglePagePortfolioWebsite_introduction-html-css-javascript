@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia De Vera - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Anchor targeting top reference for home icon navigation -->
+    <div id="top-anchor"></div>
+
+    <!-- Navigation Header Container -->
+    <header class="navbar">
+        <div class="header-profile">
+            <h2 id="profile-name">Sophia De Vera</h2>
+            <div class="contact-sub">
+                <span><i class="fas fa-envelope"></i> deverasophiamarie@gmail.com</span>
+                <span><i class="fab fa-github"></i> github.com/gloriousjustice</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#projects">Project Details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#top-anchor" class="home-icon-link" title="Back to Top"><i class="fas fa-home"></i></a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-hero">
+        <div class="hero-container">
+            <div class="hero-avatar">
+                <img src="DE VERA, Sophia Marie_ID Picture.jpeg" alt="Sophia De Vera Profile" class="avatar-image">
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm Sophia De Vera!</h1>
+                <p>I am a Computer Engineering student at Mapúa University with training across professional certification tracks. I focus on building backend web applications, web scraping tools, and Retrieval-Augmented Generation (RAG) pipelines. I practice using object-oriented principles and standard data processing techniques to handle software development tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-wrapper">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-matrix">
+                <div class="skill-tile">
+                    <i class="fab fa-java skill-icon java-color"></i>
+                    <h3>Java Programming</h3>
+                    <p class="experience-tag">Academic Projects</p>
+                </div>
+                <div class="skill-tile">
+                    <i class="fab fa-python skill-icon python-color"></i>
+                    <h3>Django & Backend APIs</h3>
+                    <p class="experience-tag">Certified Track</p>
+                </div>
+                <div class="skill-tile">
+                    <i class="fas fa-database skill-icon sql-color"></i>
+                    <h3>SQL Database Design</h3>
+                    <p class="experience-tag">Certified Track</p>
+                </div>
+                <div class="skill-tile">
+                    <i class="fab fa-git-alt skill-icon git-color"></i>
+                    <h3>Git Version Control</h3>
+                    <p class="experience-tag">Pipeline Automation</p>
+                </div>
+                <div class="skill-tile">
+                    <i class="fas fa-robot skill-icon ai-color"></i>
+                    <h3>Generative AI & RAG</h3>
+                    <p class="experience-tag">LangChain Deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-wrapper">
+            <h2 class="section-title">Project Details</h2>
+            <div class="projects-matrix">
+                <div class="project-tile">
+                    <h3>PetCare Scheduler Subsystem</h3>
+                    <p>A console application built in Java utilizing object-oriented principles, dynamic collection arrays, and object file serialization processes to save local data.</p>
+                    <a href="https://github.com/gloriousjustice" target="_blank" class="action-link">View Workspace <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-tile">
+                    <h3>RAG Document Assistant</h3>
+                    <p>A Retrieval-Augmented Generation system using LangChain to read unstructured PDF data, segment text chunks, and connect to Watsonx embeddings with a Chroma DB store.</p>
+                    <a href="https://github.com/gloriousjustice" target="_blank" class="action-link">View Workspace <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-tile">
+                    <h3>Little Lemon Backend API</h3>
+                    <p>A backend API built for a restaurant management system utilizing Django REST Framework, running a MySQL database instance to handle table booking records.</p>
+                    <a href="https://github.com/gloriousjustice" target="_blank" class="action-link">View Workspace <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations-section">
+        <div class="section-wrapper">
+            <h2 class="section-title">Recommendations</h2>
+            <div id="recommendation-list" class="recommendations-matrix">
+                <div class="recommendation-tile">
+                    <p class="recommendation-quote">"Sophia writes clean, maintainable backend code. Her steady approach to code formatting keeps project builds consistent."</p>
+                    <h4 class="recommendation-author">- Technical Project Advisor</h4>
+                </div>
+                <div class="recommendation-tile">
+                    <p class="recommendation-quote">"Her technical research capabilities and experience with tools like LangChain and vector databases meet project development standards well."</p>
+                    <h4 class="recommendation-author">- Research Supervisor</h4>
+                </div>
+                <div class="recommendation-tile">
+                    <p class="recommendation-quote">"A consistent programmer who handles data files, web scraping, and regular backend tasks with clear code structuring."</p>
+                    <h4 class="recommendation-author">- Senior Systems Developer</h4>
+                </div>
+            </div>
+
+            <!-- Client Form Container -->
+            <div class="form-wrapper">
+                <h3>Leave a Recommendation</h3>
+                <form id="rec-form">
+                    <input type="text" id="rec-name" placeholder="Your Name & Professional Title" required>
+                    <textarea id="rec-text" placeholder="Write your professional recommendation message here..." rows="4" required></textarea>
+                    <button type="submit" class="submit-action">Submit Recommendation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Dialog Modal Window -->
+    <div id="success-modal" class="modal-window">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+            <p>Thank you! Your recommendation has been submitted successfully.</p>
+            <button id="close-modal" class="modal-dismiss-btn">Ok</button>
+        </div>
+    </div>
+
+    <footer class="footer-bar">
+        <p>&copy; 2026 Sophia De Vera. Academic Portfolio Submission.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
